@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        
+        <View
+            android:id="@+id/route_line_bar"
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="#2196f3"
+            android:layout_marginRight="12dp"
+            />
+
+        <ImageView
+            android:id="@+id/route_line_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="top"
+            android:src="@drawable/ic_directions_bus" />
+
+        <LinearLayout
+            android:id="@+id/route_line_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_start_point"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="6dp"
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="Stop #4423" />
+
+            <TextView
+                android:id="@+id/tv_line_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/small_rounded_background"
+                android:backgroundTint="#1e88e5"
+                tools:text="ADL to A" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                tools:text="Ride for 3.4km" />
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                tools:text="Rp 4000" />
+
+            <TextView
+                android:id="@+id/tv_end_point"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="Stop #128" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+</LinearLayout>
